@@ -1,5 +1,5 @@
 {% set name = "model_catalogs" %}
-{% set version = "0.4.1" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/model_catalogs-{{ version }}.tar.gz
-  sha256: e01c3688e8bef72fed37b86e64c5d5dc35541fcbdb73baab4d5beaaa68dc2727
+  sha256: 2f7e81e43ba25a594487bd57b6c9706508b1b4520f07284e0a5eefda92035811
 
 build:
   noarch: python
@@ -21,19 +21,19 @@ requirements:
     - pip
   run:
     - python >=3.7
-    - intake-xarray
-    - netcdf4
-    - dask-core
     - cf_xarray
     - datetimerange
-    - numpy
-    - siphon
-    - pandas
-    - intake
+    - intake-xarray
     - appdirs
     - requests
-    - xarray
+    - netcdf4
     - pip
+    - intake
+    - xarray
+    - siphon
+    - pandas
+    - dask-core
+    - numpy
 
 test:
   imports:
@@ -52,4 +52,5 @@ about:
 
 extra:
   recipe-maintainers:
+    - ChrisBarker-NOAA
     - kthyng
