@@ -26,6 +26,7 @@ requirements:
     - dask-core
     - cf_xarray
     - datetimerange
+    - mc-goods
     - numpy
     - siphon
     - pandas
