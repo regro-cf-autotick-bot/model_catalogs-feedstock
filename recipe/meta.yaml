@@ -1,5 +1,5 @@
 {% set name = "model_catalogs" %}
-{% set version = "0.6.1" %}
+{% set version = "0.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/model_catalogs-{{ version }}.tar.gz
-  sha256: 6809263faf5ccad67dc2eb6dcfb7349bcd351f5c78088cd88bd340934ec9753d
+  sha256: ef84364e11967ed81773f8b6dd6b66f0f579310db8d2373682a15665c11839a8
 
 build:
   noarch: python
