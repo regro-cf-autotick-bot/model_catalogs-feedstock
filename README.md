@@ -1,11 +1,11 @@
-About model_catalogs
-====================
+About model_catalogs-feedstock
+==============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/model_catalogs-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/NOAA-ORR-ERD/model_catalogs
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/model_catalogs-feedstock/blob/main/LICENSE.txt)
 
 Summary: Catalogs for known models
 
