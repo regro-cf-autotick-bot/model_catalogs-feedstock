@@ -6,21 +6,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/model_catalogs-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/model_catalogs-{{ version }}.tar.gz
   sha256: ef84364e11967ed81773f8b6dd6b66f0f579310db8d2373682a15665c11839a8
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - setuptools-scm
     - pip
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - intake-xarray
     - netcdf4
     - dask-core
@@ -43,6 +43,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/NOAA-ORR-ERD/model_catalogs
